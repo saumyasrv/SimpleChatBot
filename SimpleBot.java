@@ -3,16 +3,14 @@ package bot;
 import java.util.Scanner;
 
 public class SimpleBot {
-    final static Scanner scanner = new Scanner(System.in); // Do not change this line
+    final static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        greet("Aid", "2018"); // change it as you need
+        greet("Saumya's assistant", "2021");
         remindName();
         guessAge();
         count();
         test();
-
-
     }
 
     static void greet(String assistantName, String birthYear) {
@@ -46,15 +44,12 @@ public class SimpleBot {
 
     static void test() {
         System.out.println("Let's test your programming knowledge.");
-        // write your code here
-
         System.out.println("Why do we use methods?");
         System.out.println("1. To repeat a statement multiple times.");
         System.out.println("2. To decompose a program into several small subroutines.");
         System.out.println("3. To determine the execution time of a program.");
-        System.out.println("3. To determine the execution time of a program.");
+        System.out.println("4. Used to upload the code online .");
         int x = scanner.nextInt();
-
             while (x != 2) {
                 System.out.println("Please, try again.");
                 x = scanner.nextInt();
@@ -62,12 +57,7 @@ public class SimpleBot {
             end();
         }
 
-
-
-
-    static void end() {
-
+        static void end() {
         System.out.println("Congratulations, have a nice day!");
-        // Do not change this text
     }
 }
